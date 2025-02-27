@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>CALCULATOR WITH JS</h1>
+        </div>
+        <input value="" readonly type="text" name="" id="inp">
+        <div>
+            <button class="clear-btn" onclick="ac()">Clear All</button>
+            <button class="clear-btn-1" onclick="cc()">Clear</button>
+        </div>
+        <div>
+            <button onclick="press(9)">9</button>
+            <button onclick="press(8)">8</button>
+            <button onclick="press(7)">7</button>
+            <button class="green" onclick="press('+')">+</button>
+        </div>
+        <br><br>
+        <div>
+            <button onclick="press(6)">6</button>
+            <button onclick="press(5)">5</button>
+            <button onclick="press(4)">4</button>
+            <button class="green" onclick="press('-')">-</button>
+        </div>
+        <br><br>
+        <div>
+            <button onclick="press(3)">3</button>
+            <button onclick="press(2)">2</button>
+            <button onclick="press(1)">1</button>
+            <button class="green" onclick="press('*')">x</button>
+        </div>
+        <br><br>
+        <div>
+            <button onclick="press(0)">0</button>
+            <button class="dot" onclick="press('.')">.</button>
+            <button class="green" onclick="press('/')">/</button>
+            <button class="green-1" onclick="eq()">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

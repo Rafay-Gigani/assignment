@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url(asset/pexels-pixabay-459203.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main {
+        width: 450px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .8);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        color: #fff;
+        border-radius: 10px;
+        padding: 30px 40px;
+    }
+
+    .main h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    h2 {
+        display: inline-block;
+        width: 10%;
+        padding: 20px 13px 1px 26px;
+    }
+
+    .digit {
+        text-align: center;
+        font-size: 26px;
+    }
+    .main button{
+    width: 30%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+button:hover{
+    background-color: #eee2e2;
+}
+</style>
+
+<body>
+    <div class="main">
+        <h1>StopWatch</h1>
+        <div class="digit">
+            <h2 id="min">00</h2>
+            <h2>:</h2>
+            <h2 id="sec">00</h2>
+            <h2>:</h2>
+            <h2 id="mili">00</h2>
+        </div>
+        <br><br>
+        <button id="btn" onclick="start()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
